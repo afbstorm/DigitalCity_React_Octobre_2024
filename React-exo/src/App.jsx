@@ -44,6 +44,9 @@ function App() {
     }
     */
 
+    // EXERCICE 6
+    const [isDate, setIsDate] = useState(false);
+
   return (
     <>
       {/* EXERCICE 1 */}
@@ -62,8 +65,10 @@ function App() {
       {/* <Form onDataSubmit={handleRegistration} attendees={formDatas} /> */}
 
       {/* EXERCICE 6 */}
-      <DateDuJour />
-      <Horloge />
+      {
+        isDate ? (<DateDuJour />) : (<Horloge />)
+      }
+      <button onClick={() => setIsDate(prevValue => !prevValue)}>Change de vue</button>
     </>
   )
 }
