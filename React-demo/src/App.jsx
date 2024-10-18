@@ -3,6 +3,7 @@ import './App.css';
 import Todo from './components/Todo/Todo';
 import { nanoid } from 'nanoid';
 import TaskForm from './components/TaskForm/TaskForm';
+import DemoUseEffect from './components/DemoUseEffect/DemoUseEffect';
 
 function App() {
 
@@ -56,9 +57,10 @@ function App() {
       {/* <button onClick={handleIncrement}>Incrémente de 1</button>
       <p>{value}</p> */}
 
-      <TaskForm onNewTaskSubmit={handleNewTask}/>
-      <Todo todoList={list} />
+      {/* <TaskForm onNewTaskSubmit={handleNewTask}/>
+      <Todo todoList={list} /> */}
 
+        <DemoUseEffect />
     </>
   )
 }
