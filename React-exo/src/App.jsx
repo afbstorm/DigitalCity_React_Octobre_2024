@@ -7,6 +7,7 @@ import Calculatrice from './Exercice 4/Calculatrice';
 import Form from './Exercice 5/form';
 import DateDuJour from './Exercice 6/DateDuJour/DateDuJour';
 import Horloge from './Exercice 6/Horloge/Horloge';
+import WeatherApp from './Exercice Ajax/pages/WeatherApp/WeatherApp';
 
 function App() {
 
@@ -45,7 +46,7 @@ function App() {
     */
 
     // EXERCICE 6
-    const [isDate, setIsDate] = useState(false);
+    // const [isDate, setIsDate] = useState(false);
 
   return (
     <>
@@ -65,10 +66,13 @@ function App() {
       {/* <Form onDataSubmit={handleRegistration} attendees={formDatas} /> */}
 
       {/* EXERCICE 6 */}
-      {
+      {/* {
         isDate ? (<DateDuJour />) : (<Horloge />)
       }
-      <button onClick={() => setIsDate(prevValue => !prevValue)}>Change de vue</button>
+      <button onClick={() => setIsDate(prevValue => !prevValue)}>Change de vue</button> */}
+
+      {/* EXERCICE AJAX */}
+      <WeatherApp />
     </>
   )
 }
